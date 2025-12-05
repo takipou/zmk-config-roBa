@@ -69,7 +69,7 @@
             key-positions = <17 18>;
         };
 
-        back {
+        back2 {
             bindings = <&kp RA(LEFT_ARROW)>;
             key-positions = <29 30>;
         };
