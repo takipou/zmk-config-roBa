@@ -54,24 +54,14 @@
             key-positions = <24 25>;
         };
 
-        back {
-            bindings = <&kp RA(LEFT_ARROW)>;
-            key-positions = <26 25>;
-        };
-
-        move {
-            bindings = <&kp RA(RIGHT_ARROW)>;
-            key-positions = <13 14>;
-        };
-
         movew {
             bindings = <&kp RA(RIGHT_ARROW)>;
-            key-positions = <17 18>;
+            key-positions = <17 16>;
         };
 
         back2 {
             bindings = <&kp RA(LEFT_ARROW)>;
-            key-positions = <29 30>;
+            key-positions = <29 28>;
         };
     };
 
