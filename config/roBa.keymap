@@ -39,19 +39,9 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
@@ -80,10 +70,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                          &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &lt_to_layer_0 6 ESCAPE          &kp COLON      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 1 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
+&kp Q                 &kp W         &kp E         &kp R                          &kp T                                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A                 &kp S         &kp D         &kp F                          &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z      &kp X         &kp C         &kp V                          &kp B        &lt_to_layer_0 6 ESCAPE          &kp COLON      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt_to_layer_0 6 DEL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 1 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -92,7 +82,7 @@
         FUNCTION {
             bindings = <
 &kp ESCAPE  &trans  &trans  &kp O   &kp Y                        &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans      &trans  &trans  &trans  &kp L   &trans      &kp F13  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans      &trans  &trans  &kp P   &kp L   &trans      &kp F13  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans      &trans  &trans  &trans  &kp M   &trans      &trans   &kp F1  &kp F2  &kp F3  &kp F10  &trans
 &trans      &trans  &trans  &trans  &trans  &trans      &trans   &trans                           &trans
             >;
