@@ -1,11 +1,13 @@
 // #includeのあとのあたりにスクロール量変更の定義を追記
 
-+ #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
++
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // combosやmacrosと同じ階層に以下のbihaviorsを追記
 // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
 
-     behaviors {
+behaviors {
 +       encoder_msc_down_up: encoder_msc_down_up {
 +           compatible = "zmk,behavior-sensor-rotate";
 +           label = "ENCODER_MSC_DOWN_UP";
@@ -34,6 +36,8 @@
         ・・・(省略)・・・
     };
 //ここから上を追加した
+
+#include <behaviors.dtsi>
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -113,7 +117,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
