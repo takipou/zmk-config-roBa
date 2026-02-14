@@ -12,6 +12,10 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
+// ★マウスカーソルの加速度設定を追加★
+    move-factor = <2>;           // 基本移動速度の倍率
+    smoothing = <1>;             // スムージング（0-5、大きいほど滑らか）
+
     // arrows {
     //     layers = <3>;
     //     bindings =
