@@ -47,6 +47,48 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        imeM: Mmukennkan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp M>;
+            label = "MMUKENNKAN";
+        };
+
+        imeL: imeL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp L>;
+            label = "IMEL";
+        };
+
+        imeY: imeY {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp Y>;
+            label = "IMEY";
+        };
+
+        imeO: imeO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp O>;
+            label = "IMEO";
+        };
+
+        imeP: imeP {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp P>;
+            label = "IMEP";
+        };
+
+        imeH: imeH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_MUHENKAN &kp H>;
+            label = "IMEH";
+        };
     };
 
     behaviors {
@@ -76,10 +118,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp DEL  &kp O   &kp Y   &trans                       &kp F7  &kp F8  &kp F9  &kp F12  &trans
-&trans      &trans   &kp P   &kp L   &trans  &trans      &kp F13  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans      &trans   &kp H   &kp M   &trans  &trans      &trans   &kp F1  &kp F2  &kp F3  &kp F10  &trans
-&trans      &trans   &trans  &trans  &trans  &trans      &trans   &trans                           &trans
+&kp ESCAPE  &kp DEL  &imeO   &imeY   &kp LC(M)                       &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans      &trans   &imeP   &imeL   &trans     &trans      &kp F13  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans      &trans   &imeH   &imeM   &trans     &trans      &trans   &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans      &trans   &trans  &trans  &trans     &trans      &trans   &trans                           &trans
             >;
         };
 
