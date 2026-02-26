@@ -33,11 +33,6 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
     };
 
     macros {
